@@ -1,6 +1,6 @@
 package com.excel.parser.configuration;
 
-import com.excel.parser.support.EntityExcelMapper;
+import com.excel.parser.support.GlobalMetadata;
 import com.excel.parser.support.MetaCollector;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
@@ -16,7 +16,7 @@ public class ParserBeanAutoConfiguration {
 
     @Bean
     @ConditionalOnBean(MetaCollector.class)
-    public EntityExcelMapper entityExcelMapper(){
-        return new EntityExcelMapper();
+    public GlobalMetadata entityExcelMapper(){
+        return new GlobalMetadata();
     }
 }

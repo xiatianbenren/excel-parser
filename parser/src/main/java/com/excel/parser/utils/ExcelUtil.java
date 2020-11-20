@@ -1,7 +1,7 @@
 package com.excel.parser.utils;
 
 import com.excel.parser.support.ClassMetadata;
-import com.excel.parser.support.EntityExcelMapper;
+import com.excel.parser.support.GlobalMetadata;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -175,8 +175,8 @@ public class ExcelUtil<T> {
 
     @SuppressWarnings("rawtypes")
     private void parseHeader(Row header, Class type) {
-        List<Class> classes = EntityExcelMapper.getMapSupportedClasses();
-        List<ClassMetadata> fieldMappings = EntityExcelMapper.getFieldMappings();
+        List<Class> classes = GlobalMetadata.getMapSupportedClasses();
+        List<ClassMetadata> fieldMappings = GlobalMetadata.getGlobalFieldMappings();
         if (!classes.contains(type)){
             return;
         }
