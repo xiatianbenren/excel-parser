@@ -59,7 +59,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>com-excel-parser-starter</finalName>
+		<finalName>spring-boot-starter-excel-parser</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
