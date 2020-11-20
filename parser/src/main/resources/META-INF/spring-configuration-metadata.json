@@ -1,0 +1,8 @@
+{"properties": [
+  {
+    "name": "citicpub.oms.excel.entity-packages",
+    "type": "java.lang.String",
+    "description": "指定excel解析时包扫描实体所在的路径，多个用逗号分隔"
+  }
+  ]
+}
