@@ -32,6 +32,7 @@ public class TradeLogistics {
 
     private String NAME1;//发货工厂名称
 
+    @Display(constValue = "1")
     private Byte ZFX;//出入库标识 1、采购出库单 2、退货入库单
 
     private String ZZLIFNR;//物流供应商

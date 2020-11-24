@@ -7,4 +7,5 @@ public class ClassMetadata {
     private String belongClassName;
     private String fieldName;
     private String displayName;
+    private String constValue;
 }

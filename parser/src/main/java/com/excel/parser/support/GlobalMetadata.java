@@ -50,6 +50,7 @@ public class GlobalMetadata {
                 ClassMetadata me=new ClassMetadata();
                 me.setFieldName(field.getName());
                 me.setDisplayName(field.getAnnotation(Display.class).value());
+                me.setConstValue(field.getDeclaredAnnotation(Display.class).constValue());
                 me.setBelongClassName(clz.getName());
                 GlobalFieldMappings.add(me);
             }

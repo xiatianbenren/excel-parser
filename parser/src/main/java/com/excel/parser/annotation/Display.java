@@ -11,5 +11,10 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Display {
+
+    //实体类属性名对应的excel表头名称,此属性有值表示赋值的对象中这个属性的值来源于excel
     String value() default "";
+
+    //实体类属性业务默认值，此属性有值表示赋值的对象中这个属性的值来源于注解
+    String constValue() default "";
 }
