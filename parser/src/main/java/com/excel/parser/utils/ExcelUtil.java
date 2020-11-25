@@ -21,14 +21,11 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static com.excel.parser.consts.CommonConst.*;
+
 @Slf4j
 public class ExcelUtil<T> {
 
-    public static final String EXCEL_SUFFIX_XLS = "xls";
-    public static final String EXCEL_SUFFIX_XLSX = "XLSX";
-    public static final String EMPTY = "";
-    public static final String POINT = ".";
-    public static final String SPLIT_TOKEN = "&";
     public int totalRows; //sheet中总行数
     public static int totalCells; //每一行总单元格数
     public Map<Integer, String> mapping = new HashMap<>();
